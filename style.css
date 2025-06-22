@@ -45,3 +45,41 @@ body {
   font-size: 18px;
   text-align: left;
 }
+/* Adds padding, border, and spacing to each form section */
+.form-section {
+  background-color: #ffffffb3; /* Semi-transparent white background */
+  border: 2px solid #333;     /* Solid dark border for structure */
+  padding: 15px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 8px;
+}
+/* Input fields, dropdowns, and textarea styling for uniformity and cleanliness */
+input[type="text"], textarea, select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  width: 100%;
+}
+
+/* Styling submit button and hover effect */
+button, input[type="submit"] {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #005c99;
+}
+/* Highlights and enlarges the survey link */
+.highlight-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
