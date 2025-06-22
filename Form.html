@@ -68,7 +68,7 @@
     </div>
 
 
- <form action="#" method="post">
+<form id="feedbackForm">
   <!-- form questions go here -->
 
   <div style="text-align: center; margin-top: 20px;">
@@ -83,6 +83,12 @@
   <a href="Form.html" >Survey</a> 
 </div>
 
+<script>
+  document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stop form from submitting
+    alert("Thank you for your feedback!");
+  });
+</script>
 
 </body>
 </html>
