@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Survey</title>
   <link rel="stylesheet" href="style.css">
-    <script src="quote.js"></script>
+  <script src="quote.js"></script>
 </head>
 
 <body>
@@ -26,11 +26,10 @@
   <div class="description">
     <p><strong>Website Feedback Survey</strong></p>
     <p>Thank you for visiting my website! Please take a moment to share what you enjoyed most. Your feedback helps me improve.</p>
+  </div>
 
-
-<!-- Each question is now wrapped in a styled section for better layout -->
-<div class="description">
-  <form action="#" method="post">
+  <!-- Survey Form -->
+  <form id="feedbackForm" class="description">
 
     <div class="form-section">
       <label>1. What did you enjoy the most on the website?</label><br>
@@ -67,28 +66,26 @@
       <input type="radio" name="recommend" value="No"> No<br><br>
     </div>
 
+    <!-- Submit Button -->
+    <div style="text-align: center; margin-top: 20px;">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
 
-<form id="feedbackForm">
-  <!-- form questions go here -->
-
-  <div style="text-align: center; margin-top: 20px;">
-    <input type="submit" value="Submit">
+  <!-- Footer -->
+  <div class="form-section" style="text-align: center;">
+    <a href="Home.html">Home</a> |
+    <a href="Second.html">NBA GREATEST</a> |
+    <a href="Form.html">Survey</a> 
   </div>
-</form>
 
-<!-- Footer -->
-<div class="form-section">
-  <a href="Home.html">Home</a> |
-  <a href="Second.html">NBA GREATEST</a> |
-  <a href="Form.html" >Survey</a> 
-</div>
-
-<script>
-  document.getElementById("feedbackForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // stop form from submitting
-    alert("Thank you for your feedback!");
-  });
-</script>
+  <!-- JavaScript to prevent actual form submission -->
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Stop form submission
+      alert("Thank you for your feedback!");
+    });
+  </script>
 
 </body>
 </html>
